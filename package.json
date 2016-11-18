@@ -14,12 +14,12 @@
     "type": "git",
     "url": ""
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "shern",
   "license": "MIT",
   "dependencies": {
-    "koa": "^2.0.0-alpha.7"
+    "koa": "^2.0.0-alpha.7",
+    "koa-router": "next"
   },
   "devDependencies": {
     "babel-plugin-syntax-async-functions": "^6.13.0",
