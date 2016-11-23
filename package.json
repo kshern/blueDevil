@@ -18,8 +18,11 @@
   "author": "shern",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^2.5.2",
     "koa": "^2.0.0-alpha.7",
-    "koa-router": "next"
+    "koa-compress": "^1.0.9",
+    "koa-router": "next",
+    "koa-socket": "^4.4.0"
   },
   "devDependencies": {
     "babel-plugin-syntax-async-functions": "^6.13.0",
