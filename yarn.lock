@@ -26,13 +26,17 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "http://registry.npm.taobao.org/ansi-styles/download/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
-any-promise@^1.1.0:
+any-promise@^1.0.0, any-promise@^1.1.0:
   version "1.3.0"
   resolved "http://registry.npm.taobao.org/any-promise/download/any-promise-1.3.0.tgz#abc6afeedcea52e809cdc0376aed3ce39635d17f"
 
 arraybuffer.slice@0.0.6:
   version "0.0.6"
   resolved "http://registry.npm.taobao.org/arraybuffer.slice/download/arraybuffer.slice-0.0.6.tgz#f33b2159f0532a3f3107a272c0ccfbd1ad2979ca"
+
+asap@~2.0.3:
+  version "2.0.5"
+  resolved "http://registry.npm.taobao.org/asap/download/asap-2.0.5.tgz#522765b50c3510490e52d7dcfe085ef9ba96958f"
 
 babel-code-frame@^6.16.0:
   version "6.16.0"
@@ -583,6 +587,10 @@ cookies@~0.6.1:
     depd "~1.1.0"
     keygrip "~1.0.1"
 
+core-js@^1.0.0:
+  version "1.2.7"
+  resolved "http://registry.npm.taobao.org/core-js/download/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
+
 core-js@^2.4.0:
   version "2.4.1"
   resolved "http://registry.npm.taobao.org/core-js/download/core-js-2.4.1.tgz#4de911e667b0eae9124e34254b53aea6fc618d3e"
@@ -632,6 +640,12 @@ ee-first@1.1.1:
 ejs:
   version "2.5.2"
   resolved "http://registry.npm.taobao.org/ejs/download/ejs-2.5.2.tgz#21444ba09386f0c65b6eafb96a3d51bcb3be80d1"
+
+encoding@^0.1.11:
+  version "0.1.12"
+  resolved "http://registry.npm.taobao.org/encoding/download/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
+  dependencies:
+    iconv-lite "~0.4.13"
 
 engine.io-client@1.6.8:
   version "1.6.8"
@@ -686,6 +700,17 @@ escape-string-regexp@^1.0.2:
 esutils@^2.0.2:
   version "2.0.2"
   resolved "http://registry.npm.taobao.org/esutils/download/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
+
+fbjs@^0.8.4:
+  version "0.8.6"
+  resolved "http://registry.npm.taobao.org/fbjs/download/fbjs-0.8.6.tgz#7eb67d6986b2d5007a9b6e92e0e7cb6f75cad290"
+  dependencies:
+    core-js "^1.0.0"
+    isomorphic-fetch "^2.1.1"
+    loose-envify "^1.0.0"
+    object-assign "^4.1.0"
+    promise "^7.1.1"
+    ua-parser-js "^0.7.9"
 
 fresh@^0.3.0:
   version "0.3.0"
@@ -746,6 +771,10 @@ http-errors@~1.4.0:
     inherits "2.0.1"
     statuses ">= 1.2.1 < 2"
 
+iconv-lite@~0.4.13:
+  version "0.4.15"
+  resolved "http://registry.npm.taobao.org/iconv-lite/download/iconv-lite-0.4.15.tgz#fe265a218ac6a57cfe854927e9d04c19825eddeb"
+
 indexof@0.0.1:
   version "0.0.1"
   resolved "http://registry.npm.taobao.org/indexof/download/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
@@ -774,9 +803,20 @@ is-generator-function@^1.0.3:
   version "1.0.3"
   resolved "http://registry.npm.taobao.org/is-generator-function/download/is-generator-function-1.0.3.tgz#d374ca57e807444fa2658be3728ed6b174b326b1"
 
+is-stream@^1.0.1:
+  version "1.1.0"
+  resolved "http://registry.npm.taobao.org/is-stream/download/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
+
 isarray@0.0.1:
   version "0.0.1"
   resolved "http://registry.npm.taobao.org/isarray/download/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
+
+isomorphic-fetch@^2.1.1:
+  version "2.2.1"
+  resolved "http://registry.npm.taobao.org/isomorphic-fetch/download/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
+  dependencies:
+    node-fetch "^1.0.1"
+    whatwg-fetch ">=0.10.0"
 
 js-tokens@^2.0.0:
   version "2.0.0"
@@ -827,12 +867,18 @@ koa-compress:
     koa-is-json "^1.0.0"
     statuses "^1.0.0"
 
-koa-convert@^1.2.0:
+koa-convert, koa-convert@^1.2.0:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/koa-convert/download/koa-convert-1.2.0.tgz#da40875df49de0539098d1700b50820cebcd21d0"
   dependencies:
     co "^4.6.0"
     koa-compose "^3.0.0"
+
+koa-favicon:
+  version "1.2.1"
+  resolved "http://registry.npm.taobao.org/koa-favicon/download/koa-favicon-1.2.1.tgz#c001a6db6da6d71272b93fb5b924c392194821d0"
+  dependencies:
+    mz "^2.0.0"
 
 koa-is-json@^1.0.0:
   version "1.0.0"
@@ -888,7 +934,7 @@ lodash@^4.2.0:
   version "4.17.2"
   resolved "http://registry.npm.taobao.org/lodash/download/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
 
-loose-envify@^1.0.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0:
   version "1.3.0"
   resolved "http://registry.npm.taobao.org/loose-envify/download/loose-envify-1.3.0.tgz#6b26248c42f6d4fa4b0d8542f78edfcde35642a8"
   dependencies:
@@ -950,6 +996,14 @@ ms@0.7.2:
   version "0.7.2"
   resolved "http://registry.npm.taobao.org/ms/download/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
 
+mz@^2.0.0:
+  version "2.6.0"
+  resolved "http://registry.npm.taobao.org/mz/download/mz-2.6.0.tgz#c8b8521d958df0a4f2768025db69c719ee4ef1ce"
+  dependencies:
+    any-promise "^1.0.0"
+    object-assign "^4.0.1"
+    thenify-all "^1.0.0"
+
 negotiator@0.4.9:
   version "0.4.9"
   resolved "http://registry.npm.taobao.org/negotiator/download/negotiator-0.4.9.tgz#92e46b6db53c7e421ed64a2bc94f08be7630df3f"
@@ -958,9 +1012,20 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "http://registry.npm.taobao.org/negotiator/download/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
+node-fetch@^1.0.1:
+  version "1.6.3"
+  resolved "http://registry.npm.taobao.org/node-fetch/download/node-fetch-1.6.3.tgz#dc234edd6489982d58e8f0db4f695029abcd8c04"
+  dependencies:
+    encoding "^0.1.11"
+    is-stream "^1.0.1"
+
 number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/number-is-nan/download/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
+
+object-assign@^4.0.1, object-assign@^4.1.0:
+  version "4.1.0"
+  resolved "http://registry.npm.taobao.org/object-assign/download/object-assign-4.1.0.tgz#7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0"
 
 object-component@0.0.3:
   version "0.0.3"
@@ -1023,6 +1088,20 @@ path-to-regexp@^1.1.1:
 private@^0.1.6:
   version "0.1.6"
   resolved "http://registry.npm.taobao.org/private/download/private-0.1.6.tgz#55c6a976d0f9bafb9924851350fe47b9b5fbb7c1"
+
+promise@^7.1.1:
+  version "7.1.1"
+  resolved "http://registry.npm.taobao.org/promise/download/promise-7.1.1.tgz#489654c692616b8aa55b0724fa809bb7db49c5bf"
+  dependencies:
+    asap "~2.0.3"
+
+react:
+  version "15.4.1"
+  resolved "http://registry.npm.taobao.org/react/download/react-15.4.1.tgz#498e918602677a3983cd0fd206dfe700389a0dd6"
+  dependencies:
+    fbjs "^0.8.4"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.0"
 
 regenerate@^1.2.1:
   version "1.3.2"
@@ -1142,6 +1221,18 @@ supports-color@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/supports-color/download/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
 
+thenify-all@^1.0.0:
+  version "1.6.0"
+  resolved "http://registry.npm.taobao.org/thenify-all/download/thenify-all-1.6.0.tgz#1a1918d402d8fc3f98fbf234db0bcc8cc10e9726"
+  dependencies:
+    thenify ">= 3.1.0 < 4"
+
+"thenify@>= 3.1.0 < 4":
+  version "3.2.1"
+  resolved "http://registry.npm.taobao.org/thenify/download/thenify-3.2.1.tgz#251fd1c80aff6e5cf57cb179ab1fcb724269bd11"
+  dependencies:
+    any-promise "^1.0.0"
+
 to-array@0.1.4:
   version "0.1.4"
   resolved "http://registry.npm.taobao.org/to-array/download/to-array-0.1.4.tgz#17e6c11f73dd4f3d74cda7a4ff3238e9ad9bf890"
@@ -1157,6 +1248,10 @@ type-is@^1.5.5:
     media-typer "0.3.0"
     mime-types "~2.1.11"
 
+ua-parser-js@^0.7.9:
+  version "0.7.12"
+  resolved "http://registry.npm.taobao.org/ua-parser-js/download/ua-parser-js-0.7.12.tgz#04c81a99bdd5dc52263ea29d24c6bf8d4818a4bb"
+
 ultron@1.0.x:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/ultron/download/ultron-1.0.2.tgz#ace116ab557cd197386a4e88f4685378c8b2e4fa"
@@ -1168,6 +1263,10 @@ utf8@2.1.0:
 vary@^1.0.0:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/vary/download/vary-1.1.0.tgz#e1e5affbbd16ae768dd2674394b9ad3022653140"
+
+whatwg-fetch@>=0.10.0:
+  version "2.0.1"
+  resolved "http://registry.npm.taobao.org/whatwg-fetch/download/whatwg-fetch-2.0.1.tgz#078b9461bbe91cea73cbce8bb122a05f9e92b772"
 
 ws@1.0.1:
   version "1.0.1"

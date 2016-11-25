@@ -10,8 +10,8 @@ require("babel-register")({
 
 const app = require('../src/app');
 
-console.log('listen 3001')
-app.listen(3001)
+console.log('listen 3004')
+app.listen(3004)
 
 
 // const http = require('http');
