@@ -30,16 +30,27 @@ const str = fs.readFileSync(tpath,'utf8')
 const router = new Router()
 
 let status = 'ready';
-let trunk = '启动server时渲染第一次||第一个请求直接等渲染，渲染时间内的其余请求';
+let trunk = {
+    str:'启动server时渲染第一次||第一个请求直接等渲染，渲染时间内的其余请求',
+    time:new Date().getTime()//时间戳，用来记录该模板渲染时间
+};
 
 router.get('/',async (ctx,next)=>{
-    ctx.body = trunk;
-    if(status == 'ready'){
-        status = 'pending';
-        //渲染模板 str   
-        //trunk = str;模板交付给trunk
-        status = 'ready';
+    if(new Date().getTime()-trunk.time>10000&&status=='ready'){
+            status = 'pending';
+            //渲染模板 str   
+            //trunk = str;模板交付给trunk
+            var time = new Date().getTime()
+            trunk = {
+                str:time - trunk.time,
+                time:time
+            }
+             ctx.body =trunk.str;
+             status = 'ready';
+    }else{
+         ctx.body = new Date().getTime()-trunk.time
     }
+   
     await next();
 })
 

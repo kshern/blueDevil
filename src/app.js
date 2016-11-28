@@ -10,6 +10,7 @@ const app = new Koa()
 
 
 app
+.use(Middles.errorlog())
 .use(compress({
     filter: function (content_type) {
         return /text/i.test(content_type)
