@@ -1,9 +1,8 @@
-var express = require('../../');
+var express = require('express');
 
 var app = express();
 var path = require('path')
 var fetch = require('isomorphic-fetch')
-var fs = require('fs')
 
 var count = 0;
 var count2 = 0;
