@@ -20,8 +20,8 @@
 import Router from 'koa-router';
 import fs from 'fs';
 import path from 'path';
-import events from 'events'
-import fetch from 'isomorphic-fetch'
+import events from 'events';
+import fetch from 'isomorphic-fetch';
 const tpath = path.join(__dirname,'../static/index.tpl')
 
 const str = fs.readFileSync(tpath,'utf8')
